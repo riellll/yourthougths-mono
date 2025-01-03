@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import clMerge from '../../lib/clMerge'
-import { Input, Label, Textarea } from '../../components/Fields'
+import { Input, Textarea } from '../../components/Fields'
 import { CameraIcon,XMarkIcon } from '@heroicons/react/24/solid'
 import Button from '../../components/Button'
 

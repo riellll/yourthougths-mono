@@ -1,4 +1,4 @@
-import React, { ReactNode, FC } from "react"
+import { ReactNode, FC } from "react"
 import { twMerge } from "tailwind-merge"
 
 interface CardProps {

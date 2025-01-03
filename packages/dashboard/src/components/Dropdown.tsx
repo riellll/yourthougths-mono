@@ -3,7 +3,6 @@
 import { FC, ReactNode } from "react"
 import * as RadixMenu from "@radix-ui/react-dropdown-menu"
 import { twMerge } from "tailwind-merge"
-import clsx from "clsx"
 
 interface DropdownProps {
   children: ReactNode

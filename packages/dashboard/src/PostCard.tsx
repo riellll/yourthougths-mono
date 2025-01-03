@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import {
   HeartIcon,
   ChatBubbleBottomCenterTextIcon,
@@ -10,9 +10,9 @@ import Button from "./components/Button";
 import Card from "./components/Card";
 // import cardImage from "./assets/cardImage.png";
 import userImage from "./assets/userImage.png";
-import postImage from "./assets/postImage.webp";
+
 import { Post } from "./lib/fetchpost";
-import { User } from "./lib/fetchUser";
+
 
 interface PostCardProps extends Post {
   userImage: string;
@@ -24,14 +24,11 @@ interface PostCardProps extends Post {
 const PostCard: FC<PostCardProps> = ({
   id,
   userId,
-  postId,
   title,
-  content,
   image,
   like,
   bookmark,
   comments,
-  userImage: sampleUserImage,
   username,
   name,
 }) => {

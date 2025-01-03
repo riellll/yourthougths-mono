@@ -1,7 +1,6 @@
 import React, { FC, ReactNode } from 'react'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import clMerge from '../lib/clMerge';
-import { UsersIcon } from '@heroicons/react/24/outline';
 import { twMerge } from 'tailwind-merge';
 import clsx from 'clsx';
 
@@ -115,7 +114,7 @@ interface InputWrapperProps {
     variant?: "light" | "dark" | "invisible"
   }
   
-  export const InputWrapper: FC<InputWrapperProps> = ({ children, className, variant }) => {
+  export const InputWrapper: FC<InputWrapperProps> = ({ children, variant }) => {
     const baseClasses =
       "group rounded-md divide-x border overflow-hidden rounded shadow font-medium grow flex items-center w-full !group-focus:ring-0"
     const classes = clMerge(baseClasses, {

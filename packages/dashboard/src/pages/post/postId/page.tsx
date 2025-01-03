@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ToolTip from "../../../components/ToolTip";
 import Card from "../../../components/Card";
 import Button from "../../../components/Button";
@@ -9,18 +9,14 @@ import {
 } from "@heroicons/react/24/outline";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import { Link, useParams } from "react-router-dom";
-import cardImage from "./assets/cardImage.png";
 import userImage from "../../../assets/userImage.png";
-import postImage from "../../../assets/postImage.webp";
 import { Input, InputWrapper } from "../../../components/Fields";
 import {
   fetchPostById,
-  fetchPostByPostId,
   fetchPostsByIds,
   Post,
 } from "../../../lib/fetchpost";
 import { fetchUserById, User } from "../../../lib/fetchUser";
-import PostCard from "../../../PostCard";
 import PostCardSkeleton from "../../../components/loading_skeleton/PostCardSkeleton";
 
 const PostId = () => {

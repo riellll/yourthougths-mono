@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           <li>
             <NavLink
               to="/newpost"
-              className={({ isActive }) => clsx("text-base font-medium w-full")}>
+              className={() => clsx("text-base font-medium w-full")}>
               {({ isActive }) => (
                 <Button
                   size="md"

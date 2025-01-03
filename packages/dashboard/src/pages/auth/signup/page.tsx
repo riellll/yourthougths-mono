@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../../../components/Button';
 import { Input } from '../../../components/Fields';
 import Card from '../../../components/Card';
-import { EnvelopeIcon, LockClosedIcon, UserIcon, AtSymbolIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, LockClosedIcon, UserIcon, AtSymbolIcon } from '@heroicons/react/24/outline';
 import Divider from '../../../components/Divider';
 import { Link } from 'react-router-dom';
 

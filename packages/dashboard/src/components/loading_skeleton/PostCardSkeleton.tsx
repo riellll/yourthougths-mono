@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Card from '../Card';
 import { twMerge } from 'tailwind-merge';
 import clsx from 'clsx';

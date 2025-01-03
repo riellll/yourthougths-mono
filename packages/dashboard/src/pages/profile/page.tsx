@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import userImage from "../../assets/userImage.png";
 import Card from "../../components/Card";
 import Button from "../../components/Button";
@@ -7,7 +7,6 @@ import {
   HeartIcon,
   PhotoIcon,
   BookmarkIcon,
-  ChatBubbleBottomCenterTextIcon,
 } from "@heroicons/react/24/outline";
 
 import clsx from "clsx";

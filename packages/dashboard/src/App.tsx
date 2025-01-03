@@ -1,16 +1,4 @@
 import "./App.css";
-import Button from "./components/Button";
-import Card from "./components/Card";
-import cardImage from "./assets/cardImage.png";
-import userImage from "./assets/userImage.png";
-import {
-  HeartIcon,
-  ShareIcon,
-  BookmarkIcon,
-  ChatBubbleBottomCenterTextIcon,
-} from "@heroicons/react/24/outline";
-import ToolTip from "./components/ToolTip";
-import { Link } from "react-router-dom";
 import PostCard from "./PostCard";
 import { fetchAllUsers, User } from "./lib/fetchUser";
 import { useEffect, useState } from "react";
@@ -38,7 +26,7 @@ function App() {
 
   if (loading) return <>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10">
-    {Array.from({ length: 8 }).map((_, index) => (
+    {Array.from({ length: 8 }).map((_,) => (
       <PostCardSkeleton/>
     ))}
   </div>
