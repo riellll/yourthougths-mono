@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "name": "John Doe",
+      "password": "password123",
+      "image": "https://example.com/images/john.jpg",
+      "username": "johndoe"
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "name": "Jane Smith",
+      "password": "password456",
+      "image": "https://example.com/images/jane.jpg",
+      "username": "janesmith"
+    },
+    {
+      "id": 3,
+      "email": "alice.jones@example.com",
+      "name": "Alice Jones",
+      "password": "password789",
+      "image": "https://example.com/images/alice.jpg",
+      "username": "alicejones"
+    },
+    {
+      "id": 4,
+      "email": "bob.brown@example.com",
+      "name": "Bob Brown",
+      "password": "password101",
+      "image": "https://example.com/images/bob.jpg",
+      "username": "bobbrown"
+    },
+    {
+      "id": 5,
+      "email": "charlie.davis@example.com",
+      "name": "Charlie Davis",
+      "password": "password202",
+      "image": "https://example.com/images/charlie.jpg",
+      "username": "charliedavis"
+    }
+  ]
