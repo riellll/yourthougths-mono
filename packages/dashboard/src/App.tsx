@@ -1,9 +1,9 @@
 import "./App.css";
-import PostCard from "./PostCard";
 import { fetchAllUsers, User } from "./lib/fetchUser";
 import { useEffect, useState } from "react";
 import { fetchPostsWithoutPostId, Post } from "./lib/fetchpost";
 import PostCardSkeleton from "./components/loading_skeleton/PostCardSkeleton";
+import PostCard from "./components/PostCard";
 
 function App() {
   const [posts, setPosts] = useState<Post[]>([]);

@@ -10,10 +10,15 @@ import {
 } from "@heroicons/react/24/outline";
 
 import clsx from "clsx";
-import { fetchPostByBookmark, fetchPostByLike, fetchPostByUserId, Post, } from "../../lib/fetchpost";
+import {
+  fetchPostByBookmark,
+  fetchPostByLike,
+  fetchPostByUserId,
+  Post,
+} from "../../lib/fetchpost";
 import { fetchUserById, User } from "../../lib/fetchUser";
 import { Link, useParams } from "react-router-dom";
-import PostCard from "../../PostCard";
+import PostCard from "../../components/PostCard";
 import ProfileSkeleton from "./ProfileSkeleton";
 
 const Profile = () => {
@@ -31,7 +36,7 @@ const Profile = () => {
       const userData = await fetchUserById(Number(userId));
       console.log(userData);
       setUsers(userData);
-      
+
       if (userData) {
         const postData = await fetchPostByUserId(userData.id);
         setPosts(postData);
@@ -66,17 +71,19 @@ const Profile = () => {
               alt="user"
               className="w-16 h-16 rounded-full"
             />
-           <div>
-           <p className="text-neutral-300 font-bold">{user?.name}</p>
-           <p className="text-neutral-500 text-xs font-bold">@{user?.username}</p>
-           </div>
+            <div>
+              <p className="text-neutral-300 font-bold">{user?.name}</p>
+              <p className="text-neutral-500 text-xs font-bold">
+                @{user?.username}
+              </p>
+            </div>
           </div>
           <Link to={`/profile/edit`}>
-          <Button
-            className="text-white bg-transparent hover:bg-neutral-800"
-            size="sm"
-            Icon={PencilSquareIcon}
-          ></Button>
+            <Button
+              className="text-white bg-transparent hover:bg-neutral-800"
+              size="sm"
+              Icon={PencilSquareIcon}
+            ></Button>
           </Link>
         </div>
         <p className="text-neutral-300">
@@ -107,36 +114,39 @@ const Profile = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-        {barMark === "Post" && posts?.map((post) => (
-          <PostCard 
-          key={post.id}
-            {...post}
-            userImage={user?.image || ''}
-            username={user?.username || ''}
-            name={user?.name || ''}
-            userId={user?.id || 0}
-             />
-        ))}
-        {barMark === "Heart" && postsLike?.map((post) => (
-          <PostCard 
-          key={post.id}
-            {...post}
-            userImage={user?.image || ''}
-            username={user?.username || ''}
-            name={user?.name || ''}
-            userId={user?.id || 0}
-             />
-        ))}
-        {barMark === "Bookmark" && postsBookmark?.map((post) => (
-          <PostCard 
-          key={post.id}
-            {...post}
-            userImage={user?.image || ''}
-            username={user?.username || ''}
-            name={user?.name || ''}
-            userId={user?.id || 0}
-             />
-        ))}
+        {barMark === "Post" &&
+          posts?.map((post) => (
+            <PostCard
+              key={post.id}
+              {...post}
+              userImage={user?.image || ""}
+              username={user?.username || ""}
+              name={user?.name || ""}
+              userId={user?.id || 0}
+            />
+          ))}
+        {barMark === "Heart" &&
+          postsLike?.map((post) => (
+            <PostCard
+              key={post.id}
+              {...post}
+              userImage={user?.image || ""}
+              username={user?.username || ""}
+              name={user?.name || ""}
+              userId={user?.id || 0}
+            />
+          ))}
+        {barMark === "Bookmark" &&
+          postsBookmark?.map((post) => (
+            <PostCard
+              key={post.id}
+              {...post}
+              userImage={user?.image || ""}
+              username={user?.username || ""}
+              name={user?.name || ""}
+              userId={user?.id || 0}
+            />
+          ))}
       </div>
     </div>
   );
