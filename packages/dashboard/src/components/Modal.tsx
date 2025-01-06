@@ -37,7 +37,7 @@ const Modal: FC<ModalProps> = ({ name, children, variant = 'center', className }
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+            <div className="fixed inset-0 bg-gray-400 bg-opacity-10 transition-opacity" />
           </TransitionChild>
 
           <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
