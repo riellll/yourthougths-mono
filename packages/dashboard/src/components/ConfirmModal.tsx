@@ -1,9 +1,7 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import ParamLink from "./ParamLink";
 import Button from "./Button";
 import Modal from "./Modal";
-import { Field, Input } from "./Fields";
-import { EllipsisHorizontalCircleIcon } from "@heroicons/react/24/solid";
 interface ConfirmModalProps {
   name: string;
   title: string;
